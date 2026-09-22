@@ -1,10 +1,10 @@
 const products=[
-{id:'nozes',name:'Doce de leite com nozes',category:'cremosos',image:'products/nozes.png',description:'Doce de leite e nozes para a sua celebração.'},
-{id:'morango',name:'Ninho com morango',category:'frutas',image:'products/morango.png',description:'A combinação de leite Ninho com morango.'},
-{id:'nutella',name:'Ninho com Nutella',category:'chocolate',image:'products/nutella.png',description:'Leite Ninho e Nutella em um só sabor.'},
-{id:'prestigio',name:'Prestígio',category:'chocolate',image:'products/prestigio.png',description:'Chocolate e coco, uma dupla clássica.'},
-{id:'maracuja',name:'Mousse de maracujá',category:'frutas',image:'products/maracuja.png',description:'O toque de maracujá para adoçar o seu momento.'},
-{id:'brigadeiro',name:'Brigadeiro',category:'chocolate',image:'products/brigadeiro.png',description:'O sabor de brigadeiro em forma de bolo.'}
+{id:'nozes',name:'Doce de leite com nozes',category:'cremosos',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/nozes.png',description:'Doce de leite e nozes para a sua celebração.'},
+{id:'morango',name:'Ninho com morango',category:'frutas',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/morango.png',description:'A combinação de leite Ninho com morango.'},
+{id:'nutella',name:'Ninho com Nutella',category:'chocolate',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/nutella.png',description:'Leite Ninho e Nutella em um só sabor.'},
+{id:'prestigio',name:'Prestígio',category:'chocolate',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/prestigio.png',description:'Chocolate e coco, uma dupla clássica.'},
+{id:'maracuja',name:'Mousse de maracujá',category:'frutas',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/maracuja.png',description:'O toque de maracujá para adoçar o seu momento.'},
+{id:'brigadeiro',name:'Brigadeiro',category:'chocolate',image:'https://gisele-bolos-doces-savoy.lavetsodropi.chatgpt.site/products/brigadeiro.png',description:'O sabor de brigadeiro em forma de bolo.'}
 ];
 const cart=new Map();const dialog=document.querySelector('#cart');const productList=document.querySelector('#products');
 productList.innerHTML=products.map(p=>`<article class="product" data-category="${p.category}"><img class="product-photo" src="${p.image}" alt="Bolo ${p.name}, imagem ilustrativa" loading="lazy" width="1024" height="1024"><div class="product-info"><h3>${p.name}</h3><p>${p.description}</p><small>Valor sob consulta</small><button type="button" data-add="${p.id}" aria-label="Adicionar ${p.name} ao carrinho">Adicionar ao carrinho <span aria-hidden="true">＋</span></button></div></article>`).join('');
